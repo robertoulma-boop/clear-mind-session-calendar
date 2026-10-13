@@ -1,12 +1,13 @@
 import { Link } from '@tanstack/react-router';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
+import logoCasa from '@/assets/logo-casa-b.png';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return <header className="site-header"><div className="header-inner">
-    <Link to="/" className="brand" aria-label="Casa da Escuta Mind, início"><span className="brand-symbol">c<span>e</span></span><span>casa da escuta mind<small>PSICANÁLISE</small></span></Link>
+    <Link to="/" className="brand" aria-label="Casa da Escuta Mind, início"><img src={logoCasa} alt="" width={1024} height={1024} className="brand-symbol" /><span>casa da escuta mind<small>PSICANÁLISE</small></span></Link>
     <nav className={open ? 'main-nav is-open' : 'main-nav'} aria-label="Navegação principal">
       <Link to="/" activeOptions={{ exact: true }} onClick={() => setOpen(false)}>Início</Link>
       <Link to="/sobre" onClick={() => setOpen(false)}>A psicanálise</Link>
