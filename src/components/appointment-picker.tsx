@@ -15,6 +15,7 @@ export function AppointmentPicker() {
   function download() {
     if (!date || !time) return;
     const [hour, minute] = time.split(':').map(Number);
+    if (hour === undefined || minute === undefined) return;
     const start = new Date(date); start.setHours(hour, minute);
     const end = new Date(start.getTime() + 50 * 60000);
     const stamp = (value: Date) => value.toISOString().replace(/[-:]/g, '').replace(/\.\d{3}/, '');
