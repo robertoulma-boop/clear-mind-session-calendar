@@ -5,9 +5,9 @@ import room from '@/assets/consultorio.jpg';
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
-    { title: 'Fala & Escuta — Psicanálise' },
+    { title: 'Casa da Escuta Mind — Psicanálise' },
     { name: 'description', content: 'Um espaço de escuta e acolhimento. Conheça a psicanálise e dê o primeiro passo para uma conversa inicial.' },
-    { property: 'og:title', content: 'Fala & Escuta — Psicanálise' },
+    { property: 'og:title', content: 'Casa da Escuta Mind — Psicanálise' },
     { property: 'og:description', content: 'Um espaço para falar, se escutar e encontrar seus próprios caminhos.' },
     { property: 'og:type', content: 'website' }, { name: 'twitter:card', content: 'summary_large_image' },
   ] }), component: Index,
@@ -15,7 +15,7 @@ export const Route = createFileRoute('/')({
 function Index() {
   return <main>
     <section className="hero"><img src={room} alt="Poltrona verde em um ambiente tranquilo de escuta, com luz natural" width={1920} height={1024} className="hero-image" /><div className="hero-inner">
-      <p className="eyebrow">Fala & Escuta · Psicanálise</p>
+      <p className="eyebrow">Casa da Escuta Mind · Psicanálise</p>
       <h1>Um espaço para<br />falar. Um tempo<br />para <em>se escutar.</em></h1>
       <p className="hero-copy">Nem tudo precisa de uma resposta imediata.<br />Às vezes, o primeiro passo é encontrar um lugar<br className="desktop-break" /> onde a sua história possa ser ouvida.</p>
       <div className="hero-actions"><Button asChild><Link to="/agenda">Agendar uma conversa <ArrowUpRight /></Link></Button><Link className="text-action" to="/sobre">Conheça a psicanálise <ArrowRight size={14} /></Link></div>
