@@ -1,6 +1,6 @@
 import { Link } from '@tanstack/react-router';
 import { ArrowUpRight, Menu, X } from 'lucide-react';
-import logoCasa from '@/assets/logo-casa-b.png';
+import logoCasa from '@/assets/marca.png';
 import { useState } from 'react';
 import { Button } from '@/components/ui/button';
 
