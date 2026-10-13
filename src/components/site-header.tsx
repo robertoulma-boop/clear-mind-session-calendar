@@ -6,7 +6,7 @@ import { Button } from '@/components/ui/button';
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   return <header className="site-header"><div className="header-inner">
-    <Link to="/" className="brand" aria-label="Fala &amp; Escuta, início"><span className="brand-symbol">f<span>&amp;</span></span><span>fala &amp; escuta<small>PSICANÁLISE</small></span></Link>
+    <Link to="/" className="brand" aria-label="Casa da Escuta Mind, início"><span className="brand-symbol">c<span>e</span></span><span>casa da escuta mind<small>PSICANÁLISE</small></span></Link>
     <nav className={open ? 'main-nav is-open' : 'main-nav'} aria-label="Navegação principal">
       <Link to="/" activeOptions={{ exact: true }} onClick={() => setOpen(false)}>Início</Link>
       <Link to="/sobre" onClick={() => setOpen(false)}>A psicanálise</Link>
@@ -19,5 +19,5 @@ export function SiteHeader() {
 }
 
 export function SiteFooter() {
-  return <footer className="site-footer"><div className="footer-inner"><Link to="/" className="footer-brand">fala &amp; escuta<span>Um espaço para o que é seu.</span></Link><p>Escuta, cuidado e singularidade.</p><Link to="/contato">Vamos conversar <ArrowUpRight size={16} /></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Fala &amp; Escuta · Psicanálise</span><span>Uma escuta ética. Um encontro com você.</span></div></footer>;
+  return <footer className="site-footer"><div className="footer-inner"><Link to="/" className="footer-brand">casa da escuta mind<span>Um espaço para o que é seu.</span></Link><p>Escuta, cuidado e singularidade.</p><Link to="/contato">Vamos conversar <ArrowUpRight size={16} /></Link></div><div className="footer-bottom"><span>© {new Date().getFullYear()} Casa da Escuta Mind · Psicanálise</span><span>Uma escuta ética. Um encontro com você.</span></div></footer>;
 }
