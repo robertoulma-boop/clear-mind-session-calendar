@@ -9,6 +9,5 @@
 > the editor, so keep the branch in a working state.
 <!-- LOVABLE:END -->
 
-- Keep shared navigation and footer in the root route and give each public page its own leaf route and metadata, so navigation and sharing remain consistent.
-- Keep appointment selection in a browser-only presentation component; the current calendar is explicitly demonstrative and downloads tentative reminders, never creates confirmed bookings.
+- The site is a single-page landing: all content lives on the `/` route with its own metadata, and sections (psicanálise, contato) are reached through in-page `#psicanalise` / `#contato` anchors. Never reintroduce the demonstrative agenda — Roberto removed it on 2026-11-04; every CTA points to the contact section or WhatsApp.
 - Define visual roles in src/styles.css and use the existing Button component for interactive controls, so pages share a consistent design system.
