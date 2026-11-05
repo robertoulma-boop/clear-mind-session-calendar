@@ -1,5 +1,5 @@
 import { createFileRoute } from '@tanstack/react-router';
-import { ArrowUpRight, ShieldCheck, Video, HeartHandshake, Sprout, MessagesSquare, Fingerprint, MessageCircle, MapPin } from 'lucide-react';
+import { ArrowUpRight, ShieldCheck, Video, HeartHandshake, Sprout, MessagesSquare, Fingerprint, MessageCircle, MapPin, Lock, UserRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
 import room from '@/assets/consultorio.jpg';
 
@@ -32,6 +32,15 @@ function Index() {
       <article className="care-item"><MessagesSquare size={28} /><h3>Palavra e escuta</h3><p>Um lugar para falar sobre o que atravessa sua vida, inclusive o que ainda não encontrou palavras.</p></article>
       <article className="care-item"><Fingerprint size={28} /><h3>Sua singularidade</h3><p>Não existem histórias iguais. Seu percurso é acolhido com respeito, sem julgamentos ou respostas prontas.</p></article>
       <article className="care-item"><Sprout size={28} /><h3>Novos caminhos</h3><p>Um processo de elaboração que pode abrir outras possibilidades de se relacionar consigo e com o mundo.</p></article>
+    </div></section>
+    <section className="online-section"><div className="section-heading"><p className="eyebrow">O enquadre online</p><h2 className="section-title">Como funciona o<br />atendimento <em>online?</em></h2></div><p className="online-lead">A modalidade online mantém o mesmo rigor ético e técnico do consultório presencial, adaptando-se à sua rotina.</p><div className="care-grid">
+      <article className="care-item"><Video size={28} /><h3>Formato</h3><p>As sessões são realizadas por videochamada (Google Meet ou Zoom), em ambiente criptografado e seguro.</p></article>
+      <article className="care-item"><Lock size={28} /><h3>Sigilo absoluto</h3><p>O sigilo é a regra fundamental da prática analítica. Recomenda-se que você também utilize fones de ouvido e um local isolado durante a sessão.</p></article>
+      <article className="care-item"><MessagesSquare size={28} /><h3>Associação livre</h3><p>Um espaço livre de julgamentos ou conselhos, focado em permitir que você fale abertamente sobre tudo o que vier à mente.</p></article>
+    </div></section>
+    <section className="analyst-section" id="analista"><p className="eyebrow">Quem te escuta</p><h1>Sobre o analista.</h1><div className="about-layout">
+      <div className="photo-placeholder"><UserRound aria-hidden="true" /><span>Espaço reservado<br />para foto profissional</span></div>
+      <div className="prose"><p>Olá. Meu propósito é oferecer uma escuta atenta, qualificada e estritamente ética para te ajudar a decifrar os conteúdos inconscientes que geram travamentos e dores na sua vida.</p><p>Meu percurso é pautado pelo tripé analítico fundamental: análise pessoal contínua, supervisão clínica constante e o estudo teórico permanente da psicanálise.</p><Button asChild><a href="#contato">Iniciar processo analítico <ArrowUpRight /></a></Button></div>
     </div></section>
     <section className="contact-section" id="contato"><div className="contact-layout"><section><p className="eyebrow">Vamos conversar</p><h2 className="section-title">O primeiro passo<br />pode ser uma palavra.</h2><p>O primeiro encontro é uma oportunidade para falar sobre o que motivou sua busca e conhecer a proposta de atendimento.</p><Button asChild size="lg"><a href="https://wa.me/5511967202663" target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" />Falar no WhatsApp <ArrowUpRight /></a></Button></section><section className="contact-note"><h2>Informações de contato</h2><p>Roberto Gonçalves — Psicanalista — São Paulo, SP<br />CBPC 2022-6615</p><div className="contact-lines"><a className="contact-whatsapp" href="https://wa.me/5511967202663" target="_blank" rel="noreferrer"><MessageCircle aria-hidden="true" />WhatsApp Profissional</a><a className="contact-email" href="mailto:robertoulma@gmail.com">robertoulma@gmail.com</a><a className="contact-location" href="https://www.google.com/maps/search/?api=1&query=Vila+Ol%C3%ADmpia+S%C3%A3o+Paulo+SP" target="_blank" rel="noreferrer"><MapPin aria-hidden="true" />Vila Olímpia São Paulo SP</a></div><p>Em uma emergência ou situação de risco imediato, procure o serviço de urgência da sua região. Este site não oferece atendimento de emergência.</p></section></div></section>
   </main>;
