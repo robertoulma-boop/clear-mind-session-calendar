@@ -1,7 +1,7 @@
 import { createFileRoute } from '@tanstack/react-router';
 import { ArrowUpRight, ShieldCheck, Video, HeartHandshake, Sprout, MessagesSquare, Fingerprint, MessageCircle, MapPin, Lock, UserRound } from 'lucide-react';
 import { Button } from '@/components/ui/button';
-import room from '@/assets/consultorio.jpg';
+import analystPhoto from '@/assets/roberto-foto.jpg.asset.json';
 
 export const Route = createFileRoute('/')({
   head: () => ({ meta: [
