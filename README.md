@@ -24,3 +24,5 @@ cd <repository-name>
 npm i
 npm run dev
 ```
+
+<!-- Teste de sincronização com o GitHub: 2026-11-10 -->
